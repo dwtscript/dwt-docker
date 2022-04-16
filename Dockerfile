@@ -1,3 +1,3 @@
 FROM alpine:latest
 
-RUN apk add --no-cache gcc cmake make musl-dev python3 py3-pip cmocka-dev && pip install --no-cache-dir kconfiglib && apk del py3-pip
+RUN apk add --no-cache gcc cmake make musl-dev cmocka-dev clang clang-extra-tools clang-analyzer valgrind
