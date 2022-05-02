@@ -1,3 +1,3 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
-RUN apk add --no-cache gcc clang cmake make musl-dev cmocka-dev clang clang-extra-tools clang-analyzer valgrind
+RUN apt update && apt install -y gcc cmake make libcmocka-dev clang clang-tools clang-format valgrind libasan8 libubsan1
